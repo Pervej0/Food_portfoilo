@@ -1,38 +1,65 @@
-.App {
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  max-width: 95% !important;
+}
+
+.title {
+  padding: 20px 0px;
+}
+
+.title .heading {
+  font-size: 28px;
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
+  margin-bottom: 20px;
+  text-decoration-line: underline;
+  text-decoration-style: double;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.portfolio_field .portfolio_item {
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.portfolio_field .portfolio_item .imgBox {
+  transform: scale(1);
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.portfolio_field .portfolio_item .imgBox img {
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s all ease;
 }
 
-.App-link {
-  color: #61dafb;
+.portfolio_field .portfolio_item .imgBox img:hover {
+  transform: scale(1.4);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.portfolio_field .portfolio_item .portfolio_info h1 {
+  font-size: 26px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #252525;
+  margin-bottom: 5px !important;
+}
+
+.portfolio_field .portfolio_item .portfolio_info p {
+  font-size: 16px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #252525;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  margin-bottom: 10px !important;
+}
+
+.portfolio_field .portfolio_item .portfolio_info .doller {
+  font-size: 20px;
+}
+.portfolio_field .portfolio_item .portfolio_info .price {
+  font-size: 15px;
+}
+.portfolio_field .portfolio_item .portfolio_info .catagory {
+  margin-bottom: 0px !important;
 }
